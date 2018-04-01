@@ -1,0 +1,87 @@
+2013-10-14 - version 0.1:
+   - Initial release on GitHub (a few functions still missing)
+2013-11-15 - version 0.2:
+    - Initial release on CRAN
+2013-11-26 - version 0.2.1:
+    - Added 'link' argument to updateStatus 
+    - Fixed typos in documentation
+    - Now getFriends returns also locale of friends
+2013-12-10 - version 0.2.2:
+    - Added 'getCheckins' function
+    - Fixed error in parsing getPost output
+    - Fixed error with getPost when n>200 and n<500
+2013-12-21 - version 0.2.3:
+    - Added 'getLikes' and 'getNewsfeed' functions
+2013-12-30 - version 0.2.4:
+    - 'getPost' now has separate n.likes and n.comments
+2014-01-05 - version 0.3:
+    - Updated documentation
+    - CRAN release
+2014-01-05 - version 0.3.1:
+    - Fixed errors in getPost when existing likes are fewer than request
+    - Fixed error in how likes are converted into a data frame
+2014-02-07 - version 0.3.2:
+    - Fixed errors in getPost when there few likes/comments
+2014-02-20 - version 0.3.3:
+    - Added searchPages function (thanks Joel Gombin!)
+2014-03-11 - version 0.3.4:
+    - Now compatible with httr 0.3
+2014-04-02 - version 0.4.0:
+    - Added function to execute FQL queries
+2014-12-26 - version 0.5.0:
+    - All functions now compatible with API v2.x
+    - GetPage now has date search options
+    - Fixed minor bugs in multiple functions (see github commits)
+2015-04-15 - version 0.5.1:
+    - Fixed bugs in getInsights
+2015-08-03 - version 0.5.2:
+    - Added searchGroup and getGroup functions
+    - minor fixes to comply with new CRAN rules
+    - fixes bug in fbOAuth
+2015-08-04 - version 0.6
+    - new CRAN release
+2015-08-15 - version 0.6.1
+    - fixes bug in getPage when n < available posts
+2016-02-21 - version 0.6.2
+    - getInsights now works with multiple metrics
+    - added legacy scope to authentication
+2016-03-03 - version 0.6.3
+    - fixes amount of data issue in getPage
+2016-04-15 - version 0.6.4
+    - new fix for amount of data issue in getPage
+2016-07-02 - version 0.6.5
+    - now works with httr 1.2
+2016-07-11 - version 0.6.6
+    - added getReactions to scrape reaction data for posts
+    - getPage has reactions option to scrape reaction data
+    - getShares returns list of shared posts for a given post
+    - other minor fixes
+2016-07-12 - version 0.6.7
+    - added getCommentReplies function to scrape nested comments
+2016-07-26 - version 0.6.8
+    - getGroup function now has feed option to return only admin posts
+2016-08-16 - version 0.6.9
+    - added story field to getPage
+2016-10-23 - version 0.6.10
+    - fixed bug in getPage with reactions=T in posts with no reactions
+2016-12-28 - version 0.6.11
+    - added verbose option to getPage
+2017-01-21 - version 0.6.12
+    - added support for reactions in getPost
+    - added support for multiple API versions in callAPI
+2017-02-17 - version 0.6.13
+    - fixes in getInsights
+2017-04-21 - version 0.6.14
+    - fixes in fbOAuth
+2017-05-24 - version 0.6.15
+    - adds getEvents
+    - updates in searchPages
+    - minor fixes
+2017-06-01 - version 0.6.16
+    - documentation updates
+    - searchGroups now returns 25+ results
+2017-07-11 - version 0.6.17
+    - getUsers now works with recent versions of API
+    - getMembers function added (thanks Yan Turgeon)
+2018-02-08 - version 0.6.18
+    - getCommentReplies() returns NA for from field when API does not return it
